@@ -1,13 +1,4 @@
-LaFIn: Generative Landmark Guided Face Inpainting
-=================================
-This is the PyTorch implementation of paper 'LaFIn: Generative Landmark Guided Face Inpainting'. [arXiv](https://arxiv.org/abs/1911.11394)
 
-Introduction
----------------------------------
-This paper studies an effective deep learning based strategy to inpaint face images in the wild, which comprises of a facial landmark predicting subnet and an image inpainting subnet. Concretely, given partial observation, the landmark predictor aims to provide the structural information (e.g. topological relationship and expression) of incomplete faces, while the inpaintor is to generate plausible appearance (e.g. gender and ethnicity) conditioned on the predicted landmarks. In
-addition, we validated that high-quality completed faces together with their landmarks can be utilized as augmented data to further improve the performance of (any) landmark predictor.
-
-![image](lafin.png)
 
 Prerequisites
 ---------------------------------
@@ -133,15 +124,3 @@ python3 test.py --model 1 --checkpoints ./checkpoints/wflw
 to start testing the landmark detection model on WFLW. Set `MASK = 0` in `config.yml` to achieve the highest accuracy.
 
 
-Citation
-------------------------------------------
-If you use this code in your research, please cite our [paper](https://arxiv.org/abs/1911.11394).
-
-```
-@inproceedings{yang2019lafin,
-  title={LaFIn: Generative Landmark Guided Face Inpainting},
-  author={Yang Yang and Xiaojie Guo and Jiayi Ma and Lin Ma and Haibin Ling}
-  journal={arXiv preprint},
-  year={2019},
-}
-```
