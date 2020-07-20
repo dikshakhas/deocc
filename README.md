@@ -10,7 +10,7 @@ Installation
 ---------------------------------
 * Clone this repo:
 ```
-git clone https://github.com/YaN9-Y/lafin
+git clone https://github.com/dikshakhas/deocc
 cd lafin-master
 ```
 * Install Pytorch
